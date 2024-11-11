@@ -1,0 +1,208 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: "bree serif";
+    src: url(fonts/Inter_28pt-SemiBold.ttf);
+
+}
+@font-face{
+    font-family: "inter-regular";
+    src: url(fonts/Inter_28pt-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    background:white;
+    text-align: center;
+    font-family: "bree serif";
+    background-image: url(img/fondo.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.head{
+    background-color: #545454;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+.navbar{
+    margin-right: 70px;
+}
+.navbar a{
+    font-family: "inter-regular";
+    font-size: 20px;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 15px;
+}
+.navbar a:hover{
+    color: white;
+}
+.navbar a:active{
+    color: white;
+}
+.logo img{
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    color: #a6a6a6;
+    font-size: 30px;
+    margin-right: 20px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width:952px) {
+    .logo{
+        padding: 10px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .navbar{
+        display: grid;
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background-color: #545454;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .navbar a{
+        display: block;
+    }
+    #check:checked ~.navbar{
+        left: 0;
+    }
+}
+.conten-header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 15px;
+}
+.titulo{
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+    color: #a6a6a6;
+    padding: 10px;
+}
+.subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.subtitulo p{
+    width: 60%;
+}
+@media (max-width: 858px){
+    .titulo{
+        font-size: 35px;
+    }
+}
+
+.saber-mas{
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    margin-top: 70px;
+
+}
+.saber-mas h1{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+.card{
+    width: 320px;
+    height: 260px;
+    padding: 15px;
+    background: #9bafeb;
+    border-radius: 30px;
+    border-left: 12px #d1cbcb  solid;
+    border-bottom: 15px #d1cbcb solid;
+    margin-bottom: 20px;
+}
+.card p{
+    height: 140px;
+}
+.saber-mas p{
+    text-align: center;
+    color: white;
+}
+.boton{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center
+
+}
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #545454;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background-color:white;
+    color: #545454;
+}
+.btn:active{
+    background-color: white;
+    color: #545454;
+}
+@media screen and (max-width:1300px){
+    .saber-mas{
+        display: grid;
+    }
+}
+.pie-pagina{
+    width: 100%;
+    margin-top: auto;
+    height: 80px;
+    background-color: #545454;
+    bottom: 0;
+}
+.pie-pagina ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+
+}
+.pie-pagina li{
+    margin: 20px;
+    list-style: none;
+
+}

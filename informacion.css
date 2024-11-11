@@ -1,0 +1,113 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: "bree serif";
+    src: url(fonts/Inter_28pt-SemiBold.ttf);
+
+}
+@font-face{
+    font-family: "inter-regular";
+    src: url(fonts/Inter_28pt-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    background:white;
+    text-align: center;
+    font-family: "bree serif";
+    background-image: url(img/fondo.png);
+}
+.head{
+    background-color: #545454;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+.navbar{
+    margin-right: 70px;
+}
+.navbar a{
+    font-family: "inter-regular";
+    font-size: 20px;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 15px;
+}
+.navbar a:hover{
+    color: white;
+}
+.navbar a:active{
+    color: white;
+}
+.logo img{
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    color: #a6a6a6;
+    font-size: 30px;
+    margin-right: 20px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width:952px) {
+    .logo{
+        padding: 10px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .navbar{
+        display: grid;
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background-color: #545454;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .navbar a{
+        display: block;
+    }
+    #check:checked ~.navbar{
+        left: 0;
+    }
+}
+img{
+    max-width: 400px;
+    float: right;
+    border-radius: 20px;
+    margin: 20px;
+}
+h1{
+    font-size: 40px;
+    padding: 20px;
+    color: #9bafeb;
+}
+p{
+    font-size: 20px;
+    margin: 0px 20px;
+
+}
